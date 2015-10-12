@@ -5,7 +5,7 @@ test('get page count', function (t) {
   t.plan(1);
 
   var eztv = new EZTV();
-  yts.getPageCount().then( function(count) {
+  eztv.getPageCount().then( function(count) {
     console.log(count);
     t.equal(count.status, 'ok', 'Request success');
     /*
