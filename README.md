@@ -1,5 +1,5 @@
 # eztvapi.re API wrapper
-[![Build pass](https://travis-ci.org/stylesuxx/yts.to.svg?branch=master)](https://travis-ci.org/stylesuxx/eztvapi.re.to?branch=master)  [![Dependencies](https://david-dm.org/stylesuxx/yts.to.svg)](https://david-dm.org/stylesuxx/eztvapi.re)
+[![Build pass](https://travis-ci.org/stylesuxx/eztvapi.re.svg?branch=master)](https://travis-ci.org/stylesuxx/eztvapi.re.to?branch=master)  [![Dependencies](https://david-dm.org/stylesuxx/eztvapi.re.svg)](https://david-dm.org/stylesuxx/eztvapi.re)
 
 This is a *JavaScript* wrapper for [eztvapi.re](http://eztvapi.re) that returns promises.
 
