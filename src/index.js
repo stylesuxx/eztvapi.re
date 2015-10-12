@@ -10,12 +10,18 @@ class EZTV {
         queryString += index + '=' + options[index] + '&'
       }
 
-      return queryString
+      return queryString;
     }
   }
 
   getPages() {
     var url = 'shows/';
+    return rp({url: this.apiUrl + url, json:true});
+  }
+
+  getShows(page, options = {}) {
+    var query = this.buildQuery(options);
+    var url = 'shows/' + page + '?' + query;
     return rp({url: this.apiUrl + url, json:true});
   }
 }
