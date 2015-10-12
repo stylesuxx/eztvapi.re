@@ -29,6 +29,12 @@ class EZTV {
     var url = 'show/' + id;
     return rp({url: this.apiUrl + url, json:true});
   }
+
+  search(keywords, options = {}) {
+    var query = this.buildQuery(options);
+    var url = 'shows/1?keywords=' + keywords + '&' + query;
+    return rp({url: this.apiUrl + url, json:true});
+  }
 }
 
 export default EZTV;
