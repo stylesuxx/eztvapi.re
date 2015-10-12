@@ -16,6 +16,15 @@
   "dependencies": {
     "request-promise": "^1.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stylesuxx/eztvapi.re"
+  },
+  "keywords": [
+    "eztv",
+    "eztvapi",
+    "eztvapi.re"
+  ],
   "devDependencies": {
     "babel": "^5.8.23",
     "babel-eslint": "^4.1.3",
