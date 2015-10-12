@@ -30,6 +30,7 @@ The *EZTV* class provides the following methods:
 
 ### Custom API Methods
 These methods are in place to have some more comfort working with the API.
+* search(keywords, options = {})
 
 ## Testing
 An extensive test suite is provided and may be invoked by running:
