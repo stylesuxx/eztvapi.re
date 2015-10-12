@@ -19,3 +19,13 @@ test('get show list', function (t) {
     t.equal(shows[0].title, 'Breaking Bad', 'Show title matches');
   });
 });
+
+test('get show details', function (t) {
+  t.plan(2);
+
+  var eztv = new EZTV();
+  eztv.getDetails('tt0903747').then( function(details) {
+    t.ok(details, 'Has details');
+    t.equal(details.title, 'Breaking Bad', 'Show title matches');
+  });
+});

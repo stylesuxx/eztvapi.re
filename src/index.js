@@ -24,6 +24,11 @@ class EZTV {
     var url = 'shows/' + page + '?' + query;
     return rp({url: this.apiUrl + url, json:true});
   }
+
+  getDetails(id) {
+    var url = 'show/' + id;
+    return rp({url: this.apiUrl + url, json:true});
+  }
 }
 
 export default EZTV;
