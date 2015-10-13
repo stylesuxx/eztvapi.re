@@ -34,7 +34,7 @@ test('search for shows', function (t) {
   t.plan(2);
 
   var eztv = new EZTV();
-  eztv.search('Breaking Bad').then( function(shows) {
+  eztv.search('Breaking Bad', 1, {}).then( function(shows) {
     t.ok(shows, 'Has shows');
     t.equal(shows[0].title, 'Breaking Bad', 'Show title matches');
   });

@@ -30,9 +30,9 @@ class EZTV {
     return rp({url: this.apiUrl + url, json:true});
   }
 
-  search(keywords, options = {}) {
+  search(keywords, page = 1, options = {}) {
     var query = this.buildQuery(options);
-    var url = 'shows/1?keywords=' + keywords + '&' + query;
+    var url = 'shows/' + page + '?keywords=' + keywords + '&' + query;
     return rp({url: this.apiUrl + url, json:true});
   }
 }
